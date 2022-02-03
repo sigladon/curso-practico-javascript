@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box; 
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --dark: #232830;
+    --back: #efedea;
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #e2e2e2;
+    --orange: #f4942e;
+    --sm: 1.4rem;
+    --md: 1.6rem;
+    --lg: 1.8rem;
+    --bg: 2.4rem;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Comforter', cursive;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.main-container {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.coupon-main {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 300px;
+}
+
+.title {
+    font-size: var(--bg);
+    font-weight: bold;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    text-align: center;
+}
+    
+.product-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-image img {
+    width: 148px;
+    border-radius: 16px;
+    align-items: center;
+}
+
+.pre-discount {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+}
+
+.pre-discount p {
+    font-size: var(--md)
+}
+
+.pre-discount p:nth-child(1) {
+    margin-left: 16px;
+}
+
+.pre-discount p:nth-child(2) {
+    margin-right: 16px;
+}
+
+.coupon-apply {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+}
+
+.coupon-apply label {
+    display: none;
+}
+
+.coupon-apply input {
+    border-style: none;
+    background-color: var(--text-input-field);
+    border-radius: 8px;
+    text-align: center;
+    margin-left: 8px;
+}
+
+.coupon-apply input:focus {
+    outline: none;
+}
+
+.coupon-apply input:focus::placeholder {
+    color: transparent;
+}
+
+.coupon-apply button {
+    background-color: var(--orange);
+    color: var(--white);
+    font-size: var(--sm);
+    border-style: none;
+    border-radius: 8px;
+    margin-right: 12px;
+    height: 20px;
+    width: 80px;
+    cursor: pointer;
+}
+
+.coupon-apply button:hover {
+    background-color: var(--white);
+    color: var(--orange);
+    border: 1px solid var(--orange);
+}
+
+#coupon-discount {
+    border-bottom: 1px solid var(--very-light-pink);
+    padding: 4px 16px;
+}
+
+#final-price {
+    padding: 4px 16px;
+    font-size: var(--md);
+    font-weight: bold;
+}

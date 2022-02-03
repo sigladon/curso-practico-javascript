@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Aplicar Cupones</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/retoCupones.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&family=Comforter&family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="main-container">
+            <div class="coupon-main">
+                <p class="title">Checkout</p>
+                <figure class="product-image">
+                    <img src="https://cdn.pixabay.com/photo/2012/04/13/17/00/lcd-32872_960_720.png" alt="">
+                </figure>
+                <div class="pre-discount">
+                    <p>Price</p>
+                    <p>$340.29</p>
+                </div>
+                <form action="" class="coupon-apply">
+                    <label for="coupon-code"></label>
+                    <input type="text" id="coupon-code" placeholder="Enter a coupon code" name="" value="" onsubmit="return false">
+                    <button type="button" onclick="validateCoupon()">Validate</button>
+                </form>
+                <p id="coupon-discount"></p>
+                <p id="final-price"></p>
+            </div>
+        </div>
+
+        <script src="retoCupones.js"></script>
+    </body>
+</html>
